@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "Inter";
+    src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --offBlack: hsl(0, 0%, 8%);
+
+    --imgWidth: 8rem;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter";
+    color: var(--white);
+}
+
+HTML {
+    font-size: 14px;
+    line-break: loose;
+    background: var(--offBlack);
+}
+
+BODY {
+    width: 100%;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+:focus {
+    outline: 2px solid var(--fistColor);
+    outline-offset: 0.1rem;
+}
+
+IMG {
+    display: block;
+    border-radius: 50%;
+    width: var(--imgWidth);
+    height: var(--imgWidth);
+}
+
+A {
+    background: none;
+    text-decoration: none;
+    color: var(--green);
+}
+
+UL {
+    list-style: none;
+}
+
+BUTTON {
+    padding: 0;
+    background: var(--grey);
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+SVG {
+    height: 100%;
+    width: auto;
+}
+
+H1 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+H2 {
+    font-size: 1em;
+    color: var(--green);
+    font-weight: 600;
+}
+
+ARTICLE {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 1rem;
+    background: var(--darkGrey);
+    padding: 1.5rem;
+    width: 90%;
+    max-width: 400px;
+
+}
+
+.content {
+    width: 100%;
+    text-align: center;
+}
+
+.btns,
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.description {
+    gap: .5rem;
+}
+
+.btns {
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.attribution {
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+}
+
+@media (hover:hover) {
+    BUTTON:HOVER {
+        background: var(--green);
+        color: var(--offBlack);
+    }
+
+    A:hover {
+        filter: brightness(60%);
+    }
+}
